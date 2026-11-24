@@ -1,0 +1,30 @@
+# Normalização de quebras de linha (evita problemas entre Windows local e servidor Linux no InfinityFree/x10Hosting)
+* text=auto
+
+# Código web e scripts sempre em LF
+*.php text eol=lf
+*.html text eol=lf
+*.css text eol=lf
+*.js text eol=lf
+*.sql text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.htaccess text eol=lf
+.gitignore text eol=lf
+.gitattributes text eol=lf
+.editorconfig text eol=lf
+
+# Arquivos binários
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ico binary
+*.svg text eol=lf
+*.pdf binary
+*.woff binary
+*.woff2 binary
+*.ttf binary
+*.pptx binary
+*.docx binary

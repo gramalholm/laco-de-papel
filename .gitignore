@@ -1,0 +1,63 @@
+# ==============================================================================
+# .gitignore — Projeto Web (HTML, CSS, Bootstrap, PHP, MySQL, JavaScript)
+# ==============================================================================
+
+# --- Credenciais e configurações locais (NUNCA subir senhas para o Git!) ---
+.env
+.env.*
+!.env.example
+src/app/config/*.local.php
+src/app/config/secrets.php
+
+# --- Backups e dumps temporários de banco de dados ---
+database/backups/*.sql
+database/backups/*.zip
+database/backups/*.gz
+*.dump
+*.bak
+
+# --- Logs e arquivos temporários (Apache / PHP / WAMP / XAMPP) ---
+*.log
+error_log
+php_errors.log
+tmp/
+temp/
+cache/
+
+# --- Uploads de teste locais (caso o projeto venha a usar) ---
+src/uploads/*
+!src/uploads/.gitkeep
+
+# --- Arquivos do Sistema Operacional (Windows / macOS / Linux) ---
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+.AppleDouble
+.LSOverride
+*~
+
+# --- Editores e IDEs (VS Code, Sublime Text, PhpStorm, NetBeans) ---
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+*.sublime-workspace
+*.sublime-project
+.idea/
+nbproject/
+*.swp
+*.swo
+
+# --- Dependências externas / pacotes na raiz (não bloqueia src/assets/vendor/) ---
+/node_modules/
+/vendor/
+
+# --- Arquivos compactados de deploy manual ---
+*.zip
+*.rar
+*.7z
+*.tar.gz
+
+# --- docs e entregaveis ---
+/entregaveis
