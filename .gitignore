@@ -60,4 +60,5 @@ nbproject/
 *.tar.gz
 
 # --- docs e entregaveis ---
+/docs
 /entregaveis
