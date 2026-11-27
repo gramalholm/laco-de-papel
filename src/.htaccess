@@ -1,0 +1,27 @@
+
+# Impede listagem automática de diretórios (remove a tela "Index of /")
+Options -Indexes
+
+# Página padrão
+DirectoryIndex index.php
+
+# Charset padrão UTF-8
+AddDefaultCharset UTF-8
+
+# Bloqueia acesso direto a arquivos ocultos (.htaccess, .env, .git, etc.)
+<FilesMatch "^\.">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order allow,deny
+        Deny from all
+    </IfModule>
+</FilesMatch>
+
+# Cabeçalhos básicos de segurança
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set X-Frame-Options "SAMEORIGIN"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
