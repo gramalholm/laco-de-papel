@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" width="36" height="36" role="img" aria-label="Emblema Laço de Papel">
+  <!-- Marca minimalista de editora: fólio aberto e fita marcadora dobrada -->
+  <path d="M4.5 9.5C9.5 9.5 14 11 18 14C22 11 26.5 9.5 31.5 9.5V27C26.5 27 22 28.4 18 31C14 28.4 9.5 27 4.5 27V9.5Z" fill="none" stroke="#493327" stroke-width="1.35" stroke-linejoin="round"/>
+  <path d="M18 14V31" stroke="#493327" stroke-width="1.2"/>
+  <path d="M18 4.5V15.5C18 19.5 14.2 21.8 11.4 20.4C9.5 19.4 10.2 16.8 12.8 16.8C15.5 16.8 18 18.8 18 22.2" fill="none" stroke="#783D3E" stroke-width="1.45" stroke-linecap="round"/>
+</svg>

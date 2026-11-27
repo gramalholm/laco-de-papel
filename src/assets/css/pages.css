@@ -1,0 +1,218 @@
+/* faixas de página */
+.lp-band-paper {
+  background-color: var(--lp-paper);
+  padding: clamp(3.5rem, 6vw, 5.25rem) 0;
+}
+
+.lp-band-ivory {
+  background-color: var(--lp-paper-light);
+  padding: clamp(3.75rem, 6vw, 5.5rem) 0;
+  border-top: 1px solid rgba(221, 209, 191, 0.65);
+  border-bottom: 1px solid rgba(221, 209, 191, 0.65);
+}
+
+.lp-band-moss {
+  background-color: var(--lp-moss);
+  color: var(--lp-paper-light);
+  padding: clamp(4rem, 7vw, 6rem) 0;
+}
+
+.lp-band-moss h2,
+.lp-band-moss h3 {
+  color: var(--lp-paper-light);
+}
+
+/* hero da home */
+.lp-hero-open {
+  background-color: var(--lp-paper);
+  padding: clamp(3rem, 5.5vw, 5rem) 0 clamp(4rem, 6.5vw, 5.75rem);
+}
+
+.lp-hero-title {
+  font-family: var(--lp-font-display);
+  font-size: clamp(3.35rem, 5.8vw, 5.15rem);
+  font-weight: 400;
+  line-height: 0.96;
+  letter-spacing: -0.02em;
+  color: var(--lp-ink);
+  margin: 0.75rem 0 1.6rem;
+}
+
+.lp-hero-copy {
+  font-family: var(--lp-font-display);
+  font-size: 1.16rem;
+  line-height: 1.58;
+  color: var(--lp-muted);
+  max-width: 38ch;
+  margin-bottom: 1.85rem;
+}
+
+.lp-hero-photo {
+  width: 100%;
+  aspect-ratio: 6 / 5;
+  object-fit: cover;
+  object-position: center;
+  border-radius: var(--lp-radius-sm);
+  display: block;
+}
+
+/* cabeçalho de seção */
+.lp-band-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: var(--lp-space-4);
+  margin-bottom: clamp(2rem, 3.5vw, 2.75rem);
+}
+
+.lp-moss-photo {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: var(--lp-radius-sm);
+  display: block;
+}
+
+.lp-closing-strip {
+  margin-top: var(--lp-space-7);
+  padding-top: var(--lp-space-6);
+  border-top: 1px solid var(--lp-border);
+}
+
+/* quem somos */
+.lp-about-photo {
+  width: 100%;
+  max-height: 460px;
+  object-fit: cover;
+  border-radius: var(--lp-radius-sm);
+  display: block;
+}
+
+.lp-editorial-prose {
+  font-family: var(--lp-font-display);
+  max-width: 60ch;
+  font-size: 1.24rem;
+  line-height: 1.68;
+}
+
+.lp-pullquote {
+  border-left: 2px solid var(--lp-moss);
+  padding-left: var(--lp-space-5);
+  margin: 0;
+  font-family: var(--lp-font-display);
+  font-style: italic;
+  font-size: 1.55rem;
+  line-height: 1.4;
+  color: var(--lp-ink);
+}
+
+.lp-moss-row {
+  padding: var(--lp-space-5) 0;
+  border-top: 1px solid rgba(251, 248, 241, 0.16);
+}
+
+.lp-moss-row:last-child {
+  border-bottom: 1px solid rgba(251, 248, 241, 0.16);
+}
+
+/* login e registro */
+.lp-auth-split {
+  background-color: var(--lp-paper);
+  padding: clamp(2.5rem, 5vw, 4.5rem) 0 clamp(3.5rem, 6vw, 5.5rem);
+}
+
+.lp-auth-photo {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  max-height: 600px;
+  object-fit: cover;
+  border-radius: var(--lp-radius-sm);
+  display: block;
+}
+
+/* cabeçalho das páginas internas */
+.lp-page-intro {
+  background-color: var(--lp-paper);
+  padding: clamp(2.5rem, 4.5vw, 3.75rem) 0 clamp(2rem, 3.5vw, 3rem);
+}
+
+/* topo da página de clube */
+.lp-club-masthead {
+  background-color: var(--lp-paper);
+  padding: clamp(2.25rem, 4vw, 3.25rem) 0 0;
+  border-bottom: 1px solid var(--lp-border);
+}
+
+.lp-club-masthead-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+  margin-top: var(--lp-space-5);
+}
+
+.lp-club-masthead-tab {
+  display: inline-flex;
+  align-items: center;
+  padding: 0 0 12px;
+  font-size: 0.94rem;
+  font-weight: 500;
+  color: var(--lp-muted);
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+  transition: color var(--lp-transition), border-color var(--lp-transition);
+}
+
+.lp-club-masthead-tab:hover {
+  color: var(--lp-ink);
+}
+
+.lp-club-masthead-tab.is-active {
+  color: var(--lp-moss-deep);
+  border-bottom-color: var(--lp-moss);
+  font-weight: 600;
+}
+
+/* divisória vertical no desktop */
+@media (min-width: 992px) {
+  .lp-col-divider {
+    border-left: 1px solid var(--lp-border);
+    padding-left: var(--lp-space-6);
+  }
+}
+
+.lp-auth-wrap {
+  max-width: 540px;
+  margin: var(--lp-space-5) auto;
+}
+
+/* cores do clube */
+.lp-preset-dot {
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 6px;
+}
+
+.lp-preset-dot.vinho { background-color: var(--lp-burgundy); }
+.lp-preset-dot.verde { background-color: var(--lp-moss); }
+.lp-preset-dot.madeira { background-color: var(--lp-wood); }
+
+/* página do livro */
+.lp-book-detail-cover {
+  max-width: 240px;
+}
+
+@media (max-width: 767.98px) {
+  .lp-book-detail-cover {
+    max-width: 180px;
+    margin: 0 auto;
+  }
+
+  .lp-hero-photo {
+    aspect-ratio: 4 / 3;
+  }
+}

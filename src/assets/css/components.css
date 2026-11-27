@@ -1,0 +1,682 @@
+/* botões */
+.btn-lp-primary,
+.btn-lp-moss,
+.btn-lp-secondary,
+.btn-lp-light,
+.btn-lp-ghost-light,
+.btn-lp-danger {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 43px;
+  padding: 0.55rem 1.35rem;
+  border-radius: var(--lp-radius-sm);
+  font-family: var(--lp-font-ui);
+  font-weight: 500;
+  font-size: 0.92rem;
+  letter-spacing: 0.018em;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color var(--lp-transition), border-color var(--lp-transition), color var(--lp-transition), transform 100ms ease;
+}
+
+.btn-lp-primary:active,
+.btn-lp-moss:active,
+.btn-lp-secondary:active,
+.btn-lp-light:active,
+.btn-lp-ghost-light:active,
+.btn-lp-danger:active {
+  transform: translateY(1px);
+}
+
+.btn-lp-sm {
+  min-height: 36px;
+  padding: 0.34rem 1rem;
+  font-size: 0.87rem;
+}
+
+.btn-lp-primary {
+  background-color: var(--lp-burgundy);
+  border: 1px solid var(--lp-burgundy);
+  color: var(--lp-paper-light);
+}
+
+.btn-lp-primary:hover,
+.btn-lp-primary:focus-visible {
+  background-color: var(--lp-burgundy-dark);
+  border-color: var(--lp-burgundy-dark);
+  color: var(--lp-paper-light);
+}
+
+.btn-lp-moss {
+  background-color: var(--lp-moss);
+  border: 1px solid var(--lp-moss);
+  color: var(--lp-paper-light);
+}
+
+.btn-lp-moss:hover,
+.btn-lp-moss:focus-visible {
+  background-color: var(--lp-moss-deep);
+  border-color: var(--lp-moss-deep);
+  color: var(--lp-paper-light);
+}
+
+.btn-lp-secondary {
+  background-color: transparent;
+  border: 1px solid var(--lp-ink);
+  color: var(--lp-ink);
+}
+
+.btn-lp-secondary:hover,
+.btn-lp-secondary:focus-visible {
+  background-color: var(--lp-moss);
+  border-color: var(--lp-moss);
+  color: var(--lp-paper-light);
+}
+
+.btn-lp-light {
+  background-color: var(--lp-paper-light);
+  border: 1px solid var(--lp-paper-light);
+  color: var(--lp-moss-dark);
+}
+
+.btn-lp-light:hover,
+.btn-lp-light:focus-visible {
+  background-color: var(--lp-paper);
+  border-color: var(--lp-paper);
+  color: var(--lp-ink);
+}
+
+.btn-lp-ghost-light {
+  background-color: transparent;
+  border: 1px solid rgba(251, 248, 241, 0.52);
+  color: var(--lp-paper-light);
+}
+
+.btn-lp-ghost-light:hover,
+.btn-lp-ghost-light:focus-visible {
+  background-color: var(--lp-paper-light);
+  border-color: var(--lp-paper-light);
+  color: var(--lp-moss-dark);
+}
+
+.btn-lp-danger {
+  background-color: var(--lp-error);
+  border: 1px solid var(--lp-error);
+  color: var(--lp-paper-light);
+}
+
+.btn-lp-danger:hover,
+.btn-lp-danger:focus-visible {
+  background-color: #7D362D;
+  border-color: #7D362D;
+  color: var(--lp-paper-light);
+}
+
+button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+/* cards */
+.lp-card {
+  background-color: var(--lp-paper-light);
+  border: 1px solid var(--lp-border);
+  border-radius: var(--lp-radius-md);
+  padding: var(--lp-space-5);
+}
+
+.lp-card-subtle {
+  background-color: var(--lp-paper-deep);
+  border: 1px solid var(--lp-border);
+  border-radius: var(--lp-radius-md);
+  padding: var(--lp-space-5);
+}
+
+/* cards de clube */
+.lp-club-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: var(--lp-paper-light);
+  border: 1px solid var(--lp-border);
+  border-radius: var(--lp-radius-md);
+  padding: 28px 30px;
+  transition: border-color var(--lp-transition);
+}
+
+.lp-club-card:hover {
+  border-color: var(--lp-moss);
+}
+
+.lp-club-swatch {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--lp-burgundy);
+  flex-shrink: 0;
+}
+
+.lp-club-card.preset-verde .lp-club-swatch {
+  background-color: var(--lp-moss);
+}
+
+.lp-club-card.preset-madeira .lp-club-swatch {
+  background-color: var(--lp-wood);
+}
+
+.lp-club-footer {
+  margin-top: auto;
+  padding-top: var(--lp-space-4);
+  border-top: 1px solid var(--lp-border);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.lp-club-status {
+  font-size: 0.87rem;
+  color: var(--lp-muted);
+}
+
+.lp-club-status.is-reading {
+  color: var(--lp-moss-deep);
+  font-weight: 500;
+}
+
+/* capas 2:3 para manter a proporção de livro sem distorcer */
+.lp-book-cover {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  border-radius: 2px 6px 6px 2px;
+  overflow: hidden;
+  border: 1px solid rgba(39, 32, 27, 0.16);
+  background-color: var(--lp-paper-deep);
+}
+
+.lp-book-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* capa alternativa em CSS para livros sem imagem */
+.lp-book-cloth {
+  width: 100%;
+  height: 100%;
+  padding: 14px 14px 14px 22px;
+  display: flex;
+  box-shadow:
+    inset 11px 0 0 rgba(0, 0, 0, 0.16),
+    inset 12px 0 0 rgba(255, 255, 255, 0.14);
+}
+
+.lp-book-cloth-inner {
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgba(251, 248, 241, 0.28);
+  border-radius: 2px;
+  padding: 16px 14px 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.lp-book-cloth.cloth-musgo {
+  background-color: var(--lp-moss);
+  color: var(--lp-paper-light);
+}
+
+.lp-book-cloth.cloth-vinho {
+  background-color: var(--lp-burgundy);
+  color: var(--lp-paper-light);
+}
+
+.lp-book-cloth.cloth-nogueira {
+  background-color: var(--lp-walnut);
+  color: var(--lp-paper-light);
+}
+
+.lp-book-cloth.cloth-papel {
+  background-color: var(--lp-paper);
+  color: var(--lp-ink);
+  box-shadow:
+    inset 11px 0 0 rgba(59, 84, 67, 0.14),
+    inset 12px 0 0 rgba(59, 84, 67, 0.22);
+}
+
+.lp-book-cloth.cloth-papel .lp-book-cloth-inner {
+  border-color: var(--lp-border-strong);
+}
+
+.lp-book-cloth-author {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.82;
+}
+
+.lp-book-cloth-title {
+  font-family: var(--lp-font-display);
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.22;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.lp-book-cloth-foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: 0.72rem;
+  opacity: 0.72;
+  border-top: 1px solid currentColor;
+  padding-top: 6px;
+}
+
+/* item de estante */
+.lp-book-shelf-item {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.lp-book-shelf-item .lp-book-cover {
+  transition: transform 220ms ease;
+}
+
+.lp-book-shelf-item:hover .lp-book-cover {
+  transform: translateY(-3px);
+}
+
+.lp-book-shelf-title {
+  font-family: var(--lp-font-display);
+  font-size: 1.15rem;
+  font-weight: 400;
+  line-height: 1.25;
+  color: var(--lp-ink);
+  margin-top: 14px;
+  margin-bottom: 2px;
+  transition: color var(--lp-transition);
+}
+
+.lp-book-shelf-item:hover .lp-book-shelf-title {
+  color: var(--lp-moss);
+}
+
+.lp-book-shelf-meta {
+  font-size: 0.85rem;
+  color: var(--lp-muted);
+}
+
+/* filtros de assunto */
+.lp-genre-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 7px 15px;
+  background-color: transparent;
+  border: 1px solid var(--lp-border-strong);
+  border-radius: var(--lp-radius-sm);
+  color: var(--lp-ink);
+  font-size: 0.9rem;
+  font-weight: 400;
+  text-decoration: none;
+  transition: background-color var(--lp-transition), border-color var(--lp-transition), color var(--lp-transition);
+}
+
+.lp-genre-pill:hover {
+  background-color: var(--lp-moss);
+  border-color: var(--lp-moss);
+  color: var(--lp-paper-light);
+}
+
+/* badges */
+.lp-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 2px 9px;
+  border-radius: 4px;
+  font-size: 0.74rem;
+  font-weight: 600;
+  line-height: 1.45;
+  border: 1px solid transparent;
+}
+
+.lp-badge-neutral {
+  background-color: var(--lp-paper);
+  color: var(--lp-muted);
+  border-color: var(--lp-border);
+}
+
+.lp-badge-burgundy {
+  background-color: var(--lp-burgundy-soft);
+  color: var(--lp-burgundy-dark);
+  border-color: rgba(120, 61, 62, 0.25);
+}
+
+.lp-badge-moss {
+  background-color: var(--lp-moss-soft);
+  color: var(--lp-moss-dark);
+  border-color: rgba(59, 84, 67, 0.28);
+}
+
+.lp-badge-wood {
+  background-color: var(--lp-warning-soft);
+  color: var(--lp-warning-ink);
+  border-color: rgba(178, 138, 86, 0.4);
+}
+
+/* barra de progresso */
+.lp-progress-track {
+  width: 100%;
+  height: 9px;
+  background-color: var(--lp-paper-deep);
+  border-radius: var(--lp-radius-pill);
+  overflow: hidden;
+  border: 1px solid var(--lp-border);
+}
+
+.lp-progress-fill {
+  height: 100%;
+  background-color: var(--lp-moss);
+  border-radius: var(--lp-radius-pill);
+  transition: width 220ms ease;
+}
+
+/* formulários */
+.lp-form-label {
+  display: block;
+  font-weight: 500;
+  font-size: 0.88rem;
+  color: var(--lp-ink);
+  margin-bottom: 6px;
+}
+
+.lp-field-label-caps {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--lp-muted);
+  margin-bottom: 4px;
+}
+
+.form-control,
+.form-select {
+  background-color: #FFFFFF;
+  border: 1px solid var(--lp-border-strong);
+  border-radius: var(--lp-radius-sm);
+  color: var(--lp-ink);
+  min-height: 44px;
+  padding: 0.55rem 0.9rem;
+  font-family: var(--lp-font-ui);
+}
+
+.form-control.lp-line-input,
+.form-select.lp-line-input {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid var(--lp-border-strong);
+  border-radius: 0;
+  padding: 0.5rem 0;
+  min-height: 42px;
+  box-shadow: none;
+}
+
+.form-control.lp-line-input:focus,
+.form-select.lp-line-input:focus {
+  background-color: transparent;
+  border-bottom-color: var(--lp-moss);
+  box-shadow: none;
+}
+
+.form-control.lp-line-input.is-invalid,
+.form-select.lp-line-input.is-invalid {
+  border-bottom-color: var(--lp-error);
+}
+
+textarea.form-control {
+  min-height: 112px;
+}
+
+textarea.form-control.lp-line-input {
+  min-height: 88px;
+  resize: vertical;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--lp-moss);
+  box-shadow: 0 0 0 3px rgba(59, 84, 67, 0.14);
+}
+
+.form-control.is-invalid,
+.form-select.is-invalid {
+  border-color: var(--lp-error);
+}
+
+/* listas */
+.lp-entry-list {
+  border-top: 1px solid var(--lp-border);
+}
+
+.lp-entry-row {
+  padding: 22px 0;
+  border-bottom: 1px solid var(--lp-border);
+}
+
+.lp-entry-row-compact {
+  padding: 14px 0;
+  border-bottom: 1px solid var(--lp-border);
+}
+
+/* barra de filtros */
+.lp-filter-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 22px;
+  padding-top: 14px;
+}
+
+.lp-filter-link {
+  font-size: 0.91rem;
+  color: var(--lp-muted);
+  text-decoration: none;
+  padding-bottom: 4px;
+  border-bottom: 1.5px solid transparent;
+  transition: color var(--lp-transition), border-color var(--lp-transition);
+}
+
+.lp-filter-link:hover {
+  color: var(--lp-ink);
+}
+
+.lp-filter-link.is-active {
+  color: var(--lp-moss-deep);
+  border-bottom-color: var(--lp-moss);
+  font-weight: 600;
+}
+
+/* entrada de clube nas listagens */
+.lp-club-entry {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 24px 0 26px;
+  border-top: 1px solid var(--lp-border-strong);
+}
+
+.lp-club-entry h2,
+.lp-club-entry h3 {
+  transition: color var(--lp-transition);
+}
+
+.lp-club-entry a.lp-entry-title-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.lp-club-entry a.lp-entry-title-link:hover {
+  color: var(--lp-moss);
+}
+
+/* opções de rádio */
+.lp-choice-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--lp-border);
+  cursor: pointer;
+}
+
+.lp-choice-row:first-of-type {
+  border-top: 1px solid var(--lp-border);
+}
+
+.lp-field-error {
+  color: var(--lp-error);
+  font-size: 0.84rem;
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+.lp-help-text {
+  color: var(--lp-muted);
+  font-size: 0.83rem;
+  margin-top: 5px;
+}
+
+/* alertas flash */
+.lp-alert {
+  position: relative;
+  border-radius: var(--lp-radius-sm);
+  padding: 0.85rem 1.15rem;
+  margin-bottom: var(--lp-space-5);
+  border: 1px solid transparent;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--lp-space-3);
+  font-size: 0.94rem;
+}
+
+.lp-alert.alert-dismissible {
+  padding-right: 1.15rem;
+}
+
+.lp-alert.alert-dismissible .btn-close {
+  position: static;
+  padding: 0.25rem;
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+.lp-alert-sucesso {
+  background-color: var(--lp-success-soft);
+  border-color: rgba(59, 84, 67, 0.28);
+  color: var(--lp-moss-dark);
+}
+
+.lp-alert-erro {
+  background-color: var(--lp-error-soft);
+  border-color: rgba(155, 70, 59, 0.28);
+  color: #6E2D24;
+}
+
+.lp-alert-aviso {
+  background-color: var(--lp-warning-soft);
+  border-color: rgba(178, 138, 86, 0.4);
+  color: var(--lp-warning-ink);
+}
+
+.lp-alert-info {
+  background-color: var(--lp-paper-light);
+  border-color: var(--lp-border);
+  color: var(--lp-ink);
+}
+
+/* caderno de margens */
+.lp-margin-note {
+  padding: 20px 0 22px 22px;
+  border-left: 3px solid var(--lp-wood);
+  border-bottom: 1px solid var(--lp-border);
+}
+
+.lp-margin-note.tipo-grifo {
+  border-left-color: var(--lp-brass);
+}
+
+.lp-margin-note.tipo-teoria {
+  border-left-color: var(--lp-burgundy);
+}
+
+.lp-margin-note.tipo-reflexao {
+  border-left-color: var(--lp-moss);
+}
+
+.lp-margin-note.tipo-duvida {
+  border-left-color: var(--lp-olive);
+}
+
+.lp-spoiler-entry {
+  background-color: var(--lp-moss-deep);
+  color: var(--lp-paper-light);
+  border-left: 3px solid var(--lp-brass);
+  border-radius: var(--lp-radius-sm);
+  padding: 22px 24px;
+}
+
+.lp-annotation-card {
+  background-color: var(--lp-paper-light);
+  border: 1px solid var(--lp-border);
+  border-left: 3px solid var(--lp-wood);
+  border-radius: var(--lp-radius-sm);
+  padding: var(--lp-space-5);
+}
+
+.lp-annotation-card.tipo-grifo {
+  border-left-color: var(--lp-brass);
+}
+
+.lp-annotation-card.tipo-teoria {
+  border-left-color: var(--lp-burgundy);
+}
+
+.lp-annotation-card.tipo-reflexao {
+  border-left-color: var(--lp-moss);
+}
+
+.lp-spoiler-locked {
+  background-color: var(--lp-moss-deep);
+  color: var(--lp-paper-light);
+  border-color: var(--lp-moss-dark);
+  border-left: 3px solid var(--lp-brass);
+}
+
+.lp-spoiler-locked .lp-muted {
+  color: rgba(243, 235, 221, 0.8);
+}
+
+/* estado vazio */
+.lp-empty-state {
+  text-align: center;
+  padding: var(--lp-space-7) var(--lp-space-5);
+  background-color: var(--lp-paper-light);
+  border: 1px solid var(--lp-border);
+  border-radius: var(--lp-radius-md);
+}

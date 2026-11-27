@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 360" width="240" height="360" role="img" aria-label="Capa indisponível">
+  <rect width="240" height="360" fill="#E8DECE"/>
+  <rect x="0" y="0" width="20" height="360" fill="#493327" opacity="0.16"/>
+  <line x1="20" y1="0" x2="20" y2="360" stroke="#76563F" stroke-width="1" opacity="0.35"/>
+  <rect x="34" y="24" width="182" height="312" rx="4" fill="none" stroke="#B28A56" stroke-width="1.2" opacity="0.65"/>
+  <path d="M98 158C98 148 112 147 125 158C138 169 152 168 152 158C152 148 138 147 125 158C112 169 98 168 98 158Z" fill="none" stroke="#783D3E" stroke-width="2.4" stroke-linecap="round"/>
+  <text x="125" y="206" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#685C51">Laço de Papel</text>
+  <text x="125" y="226" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#685C51">Capa indisponível</text>
+</svg>
