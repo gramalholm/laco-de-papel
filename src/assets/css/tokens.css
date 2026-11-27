@@ -1,0 +1,68 @@
+:root {
+  /* fundos */
+  --lp-paper: #F3EBDD;
+  --lp-paper-light: #FBF8F1;
+  --lp-paper-deep: #E8DECE;
+
+  /* texto */
+  --lp-ink: #27201B;
+  --lp-muted: #685C51;
+
+  /* paleta */
+  --lp-moss: #3B5443;
+  --lp-moss-deep: #2E4335;
+  --lp-moss-dark: #233429;
+  --lp-moss-soft: #E5EDE7;
+  --lp-walnut: #493327;
+  --lp-walnut-deep: #36241B;
+  --lp-wood: #76563F;
+  --lp-burgundy: #783D3E;
+  --lp-burgundy-dark: #5F3032;
+  --lp-burgundy-soft: #EFE2DE;
+  --lp-olive: #7D8061;
+  --lp-olive-ink: #585F44;
+  --lp-brass: #B28A56;
+  --lp-brass-soft: #F3E9D6;
+
+  /* bordas e estados */
+  --lp-border: #DDD1BF;
+  --lp-border-strong: #C3B49E;
+  --lp-error: #9B463B;
+  --lp-error-soft: #F6E6E3;
+  --lp-success: #3B5443;
+  --lp-success-soft: #E5EDE7;
+  --lp-warning-ink: #6B4B1E;
+  --lp-warning-soft: #F5ECD9;
+
+  /* tipografia */
+  --lp-font-display: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  --lp-font-ui: 'Alegreya Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+
+  /* espaçamento */
+  --lp-space-1: 4px;
+  --lp-space-2: 8px;
+  --lp-space-3: 12px;
+  --lp-space-4: 16px;
+  --lp-space-5: 24px;
+  --lp-space-6: 32px;
+  --lp-space-7: 56px;
+  --lp-space-8: 88px;
+
+  /* raios */
+  --lp-radius-sm: 6px;
+  --lp-radius-md: 10px;
+  --lp-radius-lg: 12px;
+  --lp-radius-pill: 999px;
+
+  --lp-content-width: 1180px;
+  --lp-transition: 170ms ease;
+
+  /* sobrescrita do Bootstrap */
+  --bs-body-bg: var(--lp-paper);
+  --bs-body-color: var(--lp-ink);
+  --bs-body-font-family: var(--lp-font-ui);
+  --bs-border-color: var(--lp-border);
+  --bs-border-radius: 6px;
+  --bs-link-color: var(--lp-burgundy);
+  --bs-link-hover-color: var(--lp-burgundy-dark);
+}
